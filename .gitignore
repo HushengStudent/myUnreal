@@ -1,1 +1,14 @@
 /UnrealEngine-5.4.4-release
+/.github
+/Project/Binaries
+/Project/DerivedDataCache
+/Project/Intermediate
+/Project/Saved/Logs
+/Project/Saved/Collections
+/Project/Saved/ShaderDebugInfo
+/Project/Saved/SourceControl
+/Project/Saved/Telemetry
+/Project/Saved/UnrealBuildTool
+/Project/.vs
+/Project/.vsconfig
+/Project/Project.sln
