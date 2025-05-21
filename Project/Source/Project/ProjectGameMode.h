@@ -6,8 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "ProjectGameMode.generated.h"
 
-UCLASS(minimalapi)
-class AProjectGameMode : public AGameModeBase
+UCLASS()
+class PROJECT_API AProjectGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
