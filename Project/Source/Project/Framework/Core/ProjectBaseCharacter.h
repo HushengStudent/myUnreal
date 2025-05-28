@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
-#include "ProjectCharacter.generated.h"
+#include "ProjectBaseCharacter.generated.h"
 
 class USpringArmComponent;
 class UCameraComponent;
@@ -13,10 +13,10 @@ class UInputMappingContext;
 class UInputAction;
 struct FInputActionValue;
 
- DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter1, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class PROJECT_API AProjectCharacter : public ACharacter
+class PROJECT_API AProjectBaseCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -45,7 +45,7 @@ class PROJECT_API AProjectCharacter : public ACharacter
 	UInputAction* LookAction;
 
 public:
-	AProjectCharacter();
+	AProjectBaseCharacter();
 	
 
 protected:
