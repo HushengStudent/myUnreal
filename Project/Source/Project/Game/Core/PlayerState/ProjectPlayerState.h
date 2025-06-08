@@ -15,6 +15,6 @@ class PROJECT_API AProjectPlayerState : public AProjectBasePlayerState
 	GENERATED_BODY()
 	
 	
-	
+	virtual void BeginPlay() override;
 	
 };

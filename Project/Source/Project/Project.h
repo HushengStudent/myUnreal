@@ -31,5 +31,5 @@
 	if (false == (Condition))																 \
 	{                                                                                        \
 		UE_LOG(LogCategory, LogType, Msg, ##__VA_ARGS__);                                    \
-		return;                                                                              \
+		return nullptr;                                                                      \
 	}
