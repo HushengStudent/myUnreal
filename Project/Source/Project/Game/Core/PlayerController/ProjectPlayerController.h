@@ -14,7 +14,8 @@ class PROJECT_API AProjectPlayerController : public AProjectBasePlayerController
 {
 	GENERATED_BODY()
 	
-	
+public:
+	AProjectPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 	
 	
 };

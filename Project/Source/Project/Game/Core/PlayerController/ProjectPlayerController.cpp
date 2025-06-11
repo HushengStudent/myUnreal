@@ -4,5 +4,8 @@
 #include "ProjectPlayerController.h"
 
 
-
-
+AProjectPlayerController::AProjectPlayerController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
+{
+	// Super::EnableCheats();
+	// CheatManager
+}
