@@ -15,7 +15,8 @@ class PROJECT_API AProjectPlayerController : public AProjectBasePlayerController
 	GENERATED_BODY()
 	
 public:
-	AProjectPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
-	
+	explicit AProjectPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
+
+	virtual void BeginPlay() override;
 	
 };

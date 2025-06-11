@@ -3,9 +3,24 @@
 
 #include "ProjectPlayerController.h"
 
+#include "Project/Game/Cheat/ProjectCheatManager.h"
+
 
 AProjectPlayerController::AProjectPlayerController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
-	// Super::EnableCheats();
-	// CheatManager
+	
 }
+
+void AProjectPlayerController::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	CheatClass = UProjectCheatManager::StaticClass();
+	
+#if !UE_BUILD_SHIPPING
+	EnableCheats();
+#endif
+	
+}
+
+

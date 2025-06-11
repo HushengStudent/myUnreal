@@ -14,7 +14,9 @@ class PROJECT_API UProjectCheatManager : public UCheatManager
 {
 	GENERATED_BODY()
 	
-	
+public:
+	UFUNCTION(Exec)
+	static void ProjectCheatCommand(int32 Param1, float Param2);
 	
 	
 };
