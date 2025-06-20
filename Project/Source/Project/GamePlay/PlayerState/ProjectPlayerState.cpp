@@ -10,7 +10,7 @@
 void AProjectPlayerState::BeginPlay()
 {
 	Super::BeginPlay();
-	if(AProjectGameStateBase* GameStateBase = Cast<AProjectGameStateBase>(UProjectGameplayStatics::GetProjectGameState(GetWorld())))
+	if(AProjectGameStateBase* GameStateBase = UProjectGameplayStatics::GetProjectGameState(GetWorld()))
 	{
 
 	}
