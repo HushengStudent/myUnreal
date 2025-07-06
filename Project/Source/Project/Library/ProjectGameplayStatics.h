@@ -68,6 +68,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
 	static AProjectCharacter* GetFirstProjectCharacter(const UObject* WorldContextObject);
+
+	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	static FVector2D GetMouseScreenPosition(const UObject* WorldContextObject);
 };
 
 template <typename T, typename>

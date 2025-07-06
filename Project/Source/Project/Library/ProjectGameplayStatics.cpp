@@ -27,3 +27,15 @@ AProjectCharacter* UProjectGameplayStatics::GetFirstProjectCharacter(const UObje
 {
 	return GetFirstProjectCharacter<AProjectCharacter>(WorldContextObject);
 }
+
+FVector2D UProjectGameplayStatics::GetMouseScreenPosition(const UObject* WorldContextObject)
+{
+	const AProjectPlayerController* PC = GetFirstProjectPlayerController(WorldContextObject);
+	if (!PC)
+	{
+		return FVector2D::Zero();
+	}
+	float MouseX, MouseY;
+	PC->GetMousePosition(MouseX, MouseY); // 左下角为原点
+	return FVector2D(MouseX, MouseY);
+}
