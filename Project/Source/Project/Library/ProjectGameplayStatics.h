@@ -54,22 +54,22 @@ class PROJECT_API UProjectGameplayStatics : public UGameplayStatics
 	static T* GetFirstProjectCharacter(const UObject* WorldContextObject);
 	
 public:
-	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	UFUNCTION(BlueprintCallable, Category = "Library|ProjectGameplayStatics")
 	static AProjectGameStateBase* GetProjectGameState(const UObject* WorldContextObject);
 
-	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	UFUNCTION(BlueprintCallable, Category = "Library|ProjectGameplayStatics")
 	static AProjectGameMode* GetProjectGameMode(const UObject* WorldContextObject);
 
-	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	UFUNCTION(BlueprintCallable, Category = "Library|ProjectGameplayStatics")
 	static AProjectPlayerController* GetFirstProjectPlayerController(const UObject* WorldContextObject);
 
-	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	UFUNCTION(BlueprintCallable, Category = "Library|ProjectGameplayStatics")
 	static AProjectPlayerState* GetFirstProjectPlayerState(const UObject* WorldContextObject);
 
-	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	UFUNCTION(BlueprintCallable, Category = "Library|ProjectGameplayStatics")
 	static AProjectCharacter* GetFirstProjectCharacter(const UObject* WorldContextObject);
 
-	UFUNCTION(BlueprintCallable, Category = "ProjectGameplayStatics")
+	UFUNCTION(BlueprintCallable, Category = "Library|ProjectGameplayStatics")
 	static FVector2D GetMouseScreenPosition(const UObject* WorldContextObject);
 };
 
