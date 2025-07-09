@@ -33,6 +33,9 @@ public class Project : ModuleRules
 			"RHI",
 			"UMG",
 			"GameplayMessageRuntime",
+			"ModularGameplay", 
+			"CommonInput", 
+			"CommonUI",
 		});
 
 	}
