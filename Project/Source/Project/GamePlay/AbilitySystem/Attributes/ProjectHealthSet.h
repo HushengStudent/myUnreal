@@ -3,8 +3,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "NativeGameplayTags.h"
 #include "Project/GamePlay/AbilitySystem/Attributes/ProjectAttributeSet.h"
 #include "ProjectHealthSet.generated.h"
+
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Gameplay_Damage);
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Gameplay_DamageImmunity);
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Gameplay_DamageSelfDestruct);
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Gameplay_FellOutOfWorld);
+UE_DECLARE_GAMEPLAY_TAG_EXTERN(TAG_Project_Damage_Message);
 
 /**
  * 
