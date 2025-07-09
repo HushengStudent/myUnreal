@@ -20,5 +20,20 @@ public class Project : ModuleRules
 			"GameplayTasks",
 			"GameplayTags",
 		});
+
+		PrivateDependencyModuleNames.AddRange(new string[]
+		{
+			"InputCore",
+			"Slate",
+			"SlateCore",
+			"RenderCore",
+			"DeveloperSettings",
+			"EnhancedInput",
+			"NetCore",
+			"RHI",
+			"UMG",
+			"GameplayMessageRuntime",
+		});
+
 	}
 }
