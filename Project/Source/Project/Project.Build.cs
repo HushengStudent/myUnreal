@@ -19,6 +19,9 @@ public class Project : ModuleRules
 			"GameplayAbilities",
 			"GameplayTasks",
 			"GameplayTags",
+			
+			"ModularGameplay",
+			"ModularGameplayActors",
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[]
@@ -33,7 +36,6 @@ public class Project : ModuleRules
 			"RHI",
 			"UMG",
 			"GameplayMessageRuntime",
-			"ModularGameplay", 
 			"CommonInput", 
 			"CommonUI",
 		});

@@ -36,6 +36,10 @@
 			"Enabled": true
 		},
 		{
+			"Name": "ModularGameplayActors",
+			"Enabled": true
+		},
+		{
 			"Name": "EnhancedInput",
 			"Enabled": true
 		},
