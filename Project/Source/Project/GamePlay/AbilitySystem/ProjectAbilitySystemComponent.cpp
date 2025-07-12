@@ -2,6 +2,7 @@
 
 
 #include "ProjectAbilitySystemComponent.h"
+#include "Project/ProjectLogChannels.h"
 
 UE_DEFINE_GAMEPLAY_TAG(TAG_Gameplay_AbilityInputBlocked, "Gameplay.AbilityInputBlocked");
 
@@ -44,7 +45,7 @@ void UProjectAbilitySystemComponent::CancelAbilitiesByFunc(TShouldCancelAbilityF
 		UProjectGameplayAbility* LyraAbilityCDO = Cast<UProjectGameplayAbility>(AbilitySpec.Ability);
 		if (!LyraAbilityCDO)
 		{
-			UE_LOG(LogTemp, Error, TEXT("CancelAbilitiesByFunc: Non-LyraGameplayAbility %s was Granted to ASC. Skipping."), *AbilitySpec.Ability.GetName());
+			UE_LOG(LogProjectAbilitySystem, Error, TEXT("CancelAbilitiesByFunc: Non-LyraGameplayAbility %s was Granted to ASC. Skipping."), *AbilitySpec.Ability.GetName());
 			continue;
 		}
 
@@ -64,7 +65,7 @@ void UProjectAbilitySystemComponent::CancelAbilitiesByFunc(TShouldCancelAbilityF
 					}
 					else
 					{
-						UE_LOG(LogTemp, Error, TEXT("CancelAbilitiesByFunc: Can't cancel ability [%s] because CanBeCanceled is false."), *LyraAbilityInstance->GetName());
+						UE_LOG(LogProjectAbilitySystem, Error, TEXT("CancelAbilitiesByFunc: Can't cancel ability [%s] because CanBeCanceled is false."), *LyraAbilityInstance->GetName());
 					}
 				}
 			}

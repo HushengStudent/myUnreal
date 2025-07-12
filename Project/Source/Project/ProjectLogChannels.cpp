@@ -3,6 +3,8 @@
 #include "ProjectLogChannels.h"
 #include "GameFramework/Actor.h"
 
+DEFINE_LOG_CATEGORY(LogTemplateCharacter);
+
 DEFINE_LOG_CATEGORY(LogProject);
 DEFINE_LOG_CATEGORY(LogProjectExperience);
 DEFINE_LOG_CATEGORY(LogProjectAbilitySystem);

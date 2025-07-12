@@ -6,6 +6,8 @@
 
 class UObject;
 
+PROJECT_API DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
+
 PROJECT_API DECLARE_LOG_CATEGORY_EXTERN(LogProject, Log, All);
 PROJECT_API DECLARE_LOG_CATEGORY_EXTERN(LogProjectExperience, Log, All);
 PROJECT_API DECLARE_LOG_CATEGORY_EXTERN(LogProjectAbilitySystem, Log, All);
