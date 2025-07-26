@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
+#include "ModularGameMode.h"
 #include "ProjectGameMode.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECT_API AProjectGameMode : public AGameModeBase
+class PROJECT_API AProjectGameMode : public AModularGameModeBase
 {
 	GENERATED_BODY()
 	
