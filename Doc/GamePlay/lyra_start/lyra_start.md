@@ -19,13 +19,10 @@ ULyraExperienceManagerComponent::OnGameFeaturePluginLoadComplete
 
 ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted
 
-	CollectGameFeaturePluginURLs
+---CollectGameFeaturePluginURLs
 	
 ALyraPlayerState::OnExperienceLoaded
 
-	GetPawnDataForController
+---GetPawnDataForController
 	
-	ActivateListOfActions
-	
-	
-	
+---ActivateListOfActions

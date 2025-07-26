@@ -5,9 +5,9 @@
 ## **_基础_**
 |________________|________________|________________|________________|________________|
 |:--------:|:------:|:--------:|:--------:|:--------:|
-|[编译引擎](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/build_engine/build_engine.md)|DDC|构建引擎|UGS|[开始项目](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/start_project/open_project.md)|
-|Lua接入|C#接入|UMG|资源管理|构建工程|
-|编辑器|Wwise|插件开发|||
+|[基础知识](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_knowledge/basic_knowledge.md)|[编译引擎](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/build_engine/build_engine.md)|DDC|构建引擎|UGS|
+|[开始项目](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/start_project/open_project.md)|Lua接入|C#接入|UMG|资源管理|
+|构建工程|编辑器|Wwise|插件开发||
 
 ## **_GamePlay(参考Lyra实现)_**
 |________________|________________|________________|________________|________________|
