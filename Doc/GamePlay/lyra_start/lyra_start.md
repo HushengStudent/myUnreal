@@ -12,11 +12,20 @@ WorldSettings设置GameplayExperience
 流程：
 
 ALyraGameMode::InitGame
+
 ALyraGameMode::HandleMatchAssignmentIfNotExpectingOne
+
 ULyraExperienceManagerComponent::OnGameFeaturePluginLoadComplete
+
 ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted
+
 	CollectGameFeaturePluginURLs
+	
 ALyraPlayerState::OnExperienceLoaded
+
 	GetPawnDataForController
+	
 	ActivateListOfActions
+	
+	
 	
