@@ -63,7 +63,7 @@ StreamLoader.RequestAsyncLoad(
 
 ### 对比
 
-![]()
+![](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_info_udataasset/udataasset.png?raw=true)
 
 ### 总结
 
