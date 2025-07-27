@@ -5,14 +5,14 @@
 ## **_基础_**
 |__________________|__________________|__________________|__________________|__________________|
 |:--------:|:------:|:--------:|:--------:|:--------:|
-|[基础知识✅](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_knowledge/basic_knowledge.md)|[编译引擎✅](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/build_engine/build_engine.md)|DDC|构建引擎|UGS|
-|[开始项目✅](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/start_project/open_project.md)|Lua接入|C#接入|UMG|资源管理|
+|[✅基础知识](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_knowledge/basic_knowledge.md)|[✅编译引擎](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/build_engine/build_engine.md)|DDC|构建引擎|UGS|
+|[✅开始项目](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/start_project/open_project.md)|Lua接入|C#接入|UMG|资源管理|
 |构建工程|编辑器|Wwise|插件开发|GameFeature|
 
 ## **_GamePlay(参考Lyra实现)_**
 |__________________|__________________|__________________|__________________|__________________|
 |:--------:|:------:|:--------:|:--------:|:--------:|
-|[基础框架✅](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/basic_framework/basic_framework.md)|[Lyra开始✅](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/lyra/lyra.md)|输入|移动|摄像机|
+|[✅基础框架](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/basic_framework/basic_framework.md)|[✅Lyra开始](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/lyra/lyra.md)|输入|移动|摄像机|
 |动画|GAS|AI|NavMesh|物理|
 |载具|||||
 
