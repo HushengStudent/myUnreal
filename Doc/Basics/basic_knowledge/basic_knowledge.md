@@ -1,7 +1,7 @@
 
 ## 基础知识
 
-[✅**UDataAsset**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_info_udataasset/basic_info_udataasset.md)
+[✔️**UDataAsset**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_info_udataasset/basic_info_udataasset.md)
 
 ## Actor 生命周期
 
@@ -26,3 +26,7 @@
 ## Rendering Pipeline
 
 ![](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_knowledge/rendering_pipeline.jpg?raw=true)
+
+## Character Pipeline
+
+![](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_knowledge/character_pipeline.jpg?raw=true)
