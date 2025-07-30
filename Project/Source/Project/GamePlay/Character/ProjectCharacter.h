@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "ModularCharacter.h"
 #include "ProjectCharacter.generated.h"
 
 class USpringArmComponent;
@@ -13,7 +13,7 @@ class UInputAction;
 struct FInputActionValue;
 
 UCLASS(config=Game)
-class PROJECT_API AProjectCharacter : public ACharacter
+class PROJECT_API AProjectCharacter : public AModularCharacter
 {
 	GENERATED_BODY()
 

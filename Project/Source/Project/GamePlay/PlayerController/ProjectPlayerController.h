@@ -3,13 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "ModularPlayerController.h"
 #include "ProjectPlayerController.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class PROJECT_API AProjectPlayerController : public APlayerController
+class PROJECT_API AProjectPlayerController : public AModularPlayerController
 {
 	GENERATED_BODY()
 	
