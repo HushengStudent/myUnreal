@@ -6,6 +6,7 @@ ULyraPawnData：HeroData_ShooterGame
 
 	ULyraPawnData：B_Hero_ShooterMannequin
 
+//B_ShooterGame_Elimination
 UGameFeatureAction：
 
 	B_PickRandomCharacter：模型

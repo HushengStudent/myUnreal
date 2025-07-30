@@ -12,27 +12,47 @@ WorldSettings设置GameplayExperience
 流程：
 
 ```C++
+//初始化GameMode
 ALyraGameMode::InitGame
+
+//初始化GameState
+ALyraGameMode::InitGameState
 
 ALyraGameMode::HandleMatchAssignmentIfNotExpectingOne
 
 ALyraGameMode::OnMatchAssignmentGiven
 
+//设置本次ExperienceId并加载
 ULyraExperienceManagerComponent::SetCurrentExperience
 
 ULyraExperienceManagerComponent::StartExperienceLoad
 
+//Experience相关内容加载完成
 ULyraExperienceManagerComponent::OnExperienceLoadComplete
 
-	ULyraExperienceManagerComponent::OnGameFeaturePluginLoadComplete
+//GameFeaturePlugin加载回调
+ULyraExperienceManagerComponent::OnGameFeaturePluginLoadComplete
 
-	ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted
+//GameFeaturePlugin加载完成
+ULyraExperienceManagerComponent::OnExperienceFullLoadCompleted
 
-		CollectGameFeaturePluginURLs
+ALyraGameMode::OnExperienceLoaded
 	
-ALyraPlayerState::OnExperienceLoaded
-
-	GetPawnDataForController
+	RestartPlayer
 	
-ActivateListOfActions
+	ALyraGameState::AddPlayerState
+	
+	//角色初始化
+	ALyraPlayerState::OnExperienceLoaded
+	
+		ALyraGameMode::GetPawnDataForController
+		
+		ALyraPlayerState::SetPawnData
+		
+		ULyraAbilitySet::GiveToAbilitySystem
+	
+//机器人
+ULyraBotCreationComponent::OnExperienceLoaded
+
+ULyraBotCreationComponent::SpawnOneBot
 ```
