@@ -25,3 +25,7 @@
 /Project/Plugins/GameplayMessageRouter/Binaries
 /Project/Plugins/ModularGameplayActors/Binaries
 /Project/Plugins/ModularGameplayActors/Intermediate
+/Project/Plugins/CommonGame/Binaries
+/Project/Plugins/CommonGame/Intermediate
+/Project/Plugins/CommonUser/Intermediate
+/Project/Plugins/CommonUser/Binaries
