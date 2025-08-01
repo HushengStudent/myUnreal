@@ -5,10 +5,10 @@
 #include "CoreMinimal.h"
 #include "ProjectAbilityCost.h"
 #include "Abilities/GameplayAbility.h"
-#include "Project/GamePlay/Character/ProjectCharacter.h"
-#include "Project/GamePlay/PlayerController/ProjectPlayerController.h"
 #include "ProjectGameplayAbility.generated.h"
 
+class AProjectCharacter;
+class AProjectPlayerController;
 /**
  * 
  */

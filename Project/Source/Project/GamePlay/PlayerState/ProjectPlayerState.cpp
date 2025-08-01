@@ -7,20 +7,21 @@
 #include "Project/SubSystem/World/ProjectDelegateWorldSubsystem.h"
 
 
-// void AProjectPlayerState::BeginPlay()
-// {
-// 	Super::BeginPlay();
-// 	if(AProjectGameStateBase* GameStateBase = UProjectGameplayStatics::GetProjectGameState(GetWorld()))
-// 	{
-//
-// 	}
-// 	if(const UProjectDelegateWorldSubsystem* DelegateWorldSubsystem = GetWorld()->GetSubsystem<UProjectDelegateWorldSubsystem>(); DelegateWorldSubsystem && DelegateWorldSubsystem->OnPlayerStateAdd.IsBound())
-// 	{
-// 		DelegateWorldSubsystem->OnPlayerStateAdd.Broadcast(this);
-// 	}
-// }
+void AProjectPlayerState::BeginPlay()
+{
+	Super::BeginPlay();
+	if(AProjectGameStateBase* GameStateBase = UProjectGameplayStatics::GetProjectGameState(GetWorld()))
+	{
+
+	}
+	if(const UProjectDelegateWorldSubsystem* DelegateWorldSubsystem = GetWorld()->GetSubsystem<UProjectDelegateWorldSubsystem>(); DelegateWorldSubsystem && DelegateWorldSubsystem->OnPlayerStateAdd.IsBound())
+	{
+		DelegateWorldSubsystem->OnPlayerStateAdd.Broadcast(this);
+	}
+}
 
 AProjectPlayerState::AProjectPlayerState(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
 {
 }
 

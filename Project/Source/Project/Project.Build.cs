@@ -38,6 +38,7 @@ public class Project : ModuleRules
 			"GameplayMessageRuntime",
 			"CommonInput", 
 			"CommonUI",
+			"CommonGame",
 		});
 
 	}
