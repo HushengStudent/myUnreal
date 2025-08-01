@@ -13,11 +13,6 @@
 				"GameplayAbilities",
 				"CoreUObject"
 			]
-		},
-		{
-			"Name": "ProjectEditor",
-			"Type": "Editor",
-			"LoadingPhase": "Default"
 		}
 	],
 	"Plugins": [
