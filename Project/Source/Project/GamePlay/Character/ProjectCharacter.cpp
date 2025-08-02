@@ -11,11 +11,13 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Project/ProjectLogChannels.h"
+#include "Project/GamePlay/PlayerController/ProjectPlayerController.h"
 
 /////////////////////////////////////////////////////////////////////////
 // AProjectCharacter
 
-AProjectCharacter::AProjectCharacter()
+AProjectCharacter::AProjectCharacter(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -53,10 +55,89 @@ AProjectCharacter::AProjectCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
+AProjectPlayerController* AProjectCharacter::GetProjectPlayerController() const
+{
+	return CastChecked<AProjectPlayerController>(Controller, ECastCheckedType::NullAllowed);
+}
+
+AProjectPlayerState* AProjectCharacter::GetProjectPlayerState() const
+{
+	return CastChecked<AProjectPlayerState>(GetPlayerState(), ECastCheckedType::NullAllowed);
+}
+
+UProjectAbilitySystemComponent* AProjectCharacter::GetProjectAbilitySystemComponent() const
+{
+	return Cast<UProjectAbilitySystemComponent>(GetAbilitySystemComponent());
+}
+
+UAbilitySystemComponent* AProjectCharacter::GetAbilitySystemComponent() const
+{
+	const AProjectPlayerState* PS = GetProjectPlayerState();
+	if (PS == nullptr)
+	{
+		return nullptr;
+	}
+
+	return PS->GetProjectAbilitySystemComponent();
+}
+
+void AProjectCharacter::GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const
+{
+}
+
+bool AProjectCharacter::HasMatchingGameplayTag(FGameplayTag TagToCheck) const
+{
+	return IGameplayTagAssetInterface::HasMatchingGameplayTag(TagToCheck);
+}
+
+bool AProjectCharacter::HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const
+{
+	return IGameplayTagAssetInterface::HasAllMatchingGameplayTags(TagContainer);
+}
+
+bool AProjectCharacter::HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const
+{
+	return IGameplayTagAssetInterface::HasAnyMatchingGameplayTags(TagContainer);
+}
+
+void AProjectCharacter::ToggleCrouch()
+{
+}
+
+void AProjectCharacter::PreInitializeComponents()
+{
+	Super::PreInitializeComponents();
+}
+
 void AProjectCharacter::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+}
+
+void AProjectCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Super::EndPlay(EndPlayReason);
+}
+
+void AProjectCharacter::Reset()
+{
+	Super::Reset();
+}
+
+void AProjectCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+}
+
+void AProjectCharacter::PreReplication(IRepChangedPropertyTracker& ChangedPropertyTracker)
+{
+	Super::PreReplication(ChangedPropertyTracker);
+}
+
+void AProjectCharacter::NotifyControllerChanged()
+{
+	Super::NotifyControllerChanged();
 }
 
 //////////////////////////////////////////////////////////////////////////
