@@ -12,7 +12,7 @@
 ## **_GamePlay(参考[Lyra](https://dev.epicgames.com/documentation/zh-cn/unreal-engine/lyra-sample-game-in-unreal-engine?application_version=5.5)实现)_**
 |__________________|__________________|__________________|__________________|__________________|
 |:--------:|:------:|:--------:|:--------:|:--------:|
-|[✔️**基础框架**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/basic_framework/basic_framework.md)|[✔️**Lyra开始**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/lyra/lyra.md)|[✔️**输入控制**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/input_component/input_component.md)|**角色移动**|**摄像机**|
+|[✔️**基础框架**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/basic_framework/basic_framework.md)|[✔️**Lyra开始**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/lyra/lyra.md)|[✔️**输入控制**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/input_component/input_component.md)|[✔️**角色移动**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/character_movement_component/character_movement_component.md)|**摄像机**|
 |**GAS**|**武器**|**AI**|**任务**|**动画**|
 |**NavMesh**|**物理**|**载具**|**关卡**|**回放**|
 
