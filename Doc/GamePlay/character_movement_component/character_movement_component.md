@@ -63,7 +63,7 @@
 
 3、（Simulated Proxy）直接应用服务器同步的ReplicatedMovement
 
-![](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/\character_movement_component/\character_movement_component.png?raw=true)
+![](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/character_movement_component/character_movement_component.png?raw=true)
 
 #### 带宽优化
 
