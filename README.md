@@ -14,7 +14,7 @@
 |:--------:|:------:|:--------:|:--------:|:--------:|
 |[✔️**基础框架**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/basic_framework/basic_framework.md)|[✔️**Lyra开始**](https://github.com/HushengStudent/myUnreal/blob/main/Doc/GamePlay/lyra/lyra.md)|**输入控制**|**角色移动**|**摄像机**|
 |**GAS**|**武器**|**AI**|**任务**|**动画**|
-|**NavMesh**|**物理**|**载具**|**关卡**||
+|**NavMesh**|**物理**|**载具**|**关卡**|**回放**|
 
 ## **_优化_**
 |__________________|__________________|__________________|__________________|__________________|
