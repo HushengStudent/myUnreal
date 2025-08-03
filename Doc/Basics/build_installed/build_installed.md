@@ -23,6 +23,8 @@ UnrealEngine-5.4.4-release\Engine\Build\BatchFiles\RunUAT.bat BuildGraph
 -clean
 ```
 
+生成目录：UnrealEngine-5.4.4-release\LocalBuilds\Engine\Windows
+
 注册
 
 ```language
