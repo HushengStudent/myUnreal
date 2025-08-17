@@ -6,6 +6,7 @@
 #include "ModularGameState.h"
 #include "Project/GamePlay/AbilitySystem/ProjectAbilitySystemComponent.h"
 #include "AbilitySystemInterface.h"
+#include "Project/GamePlay/Messages/ProjectVerbMessage.h"
 #include "ProjectGameStateBase.generated.h"
 
 /**
@@ -38,7 +39,24 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	//~End of IAbilitySystemInterface
 
+	
+	// Send a message that all clients will (probably) get
+	// (use only for client notifications like eliminations, server join messages, etc... that can handle being lost)
+	UFUNCTION(NetMulticast, Unreliable, BlueprintCallable, Category = "GamePlay|GameStateBase")
+	void MulticastMessageToClients(const FProjectVerbMessage Message);
+
+	// Send a message that all clients will be guaranteed to get
+	// (use only for client notifications that cannot handle being lost)
+	UFUNCTION(NetMulticast, Reliable, BlueprintCallable, Category = "GamePlay|GameStateBase")
+	void MulticastReliableMessageToClients(const FProjectVerbMessage Message);
+
+	// Gets the server's FPS, replicated to clients
+	float GetServerFPS() const;
+
 private:
+	UPROPERTY(Replicated)
+	float ServerFPS;
+	
 	UPROPERTY(VisibleAnywhere, Category = "GamePlay|GameStateBase")
 	TObjectPtr<UProjectAbilitySystemComponent> AbilitySystemComponent;
 };

@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{A3BDE2EF-4EDB-93F1-CB04-208FACFB3CD0}",
+	"EngineAssociation": "{5564DB85-40D5-B24B-1F35-F49F65B1CDE6}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -54,6 +54,6 @@
 		{
 			"Name": "CommonGame",
 			"Enabled": true
-		},
+		}
 	]
 }

@@ -6,6 +6,7 @@
 #include "Project/GamePlay/GameStateBase/ProjectGameStateBase.h"
 #include "Project/SubSystem/World/ProjectDelegateWorldSubsystem.h"
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(ProjectPlayerState)
 
 void AProjectPlayerState::BeginPlay()
 {

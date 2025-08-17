@@ -5,6 +5,8 @@
 
 #include "Project/Cheat/ProjectCheatManager.h"
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(ProjectPlayerController)
+
 AProjectPlayerController::AProjectPlayerController(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
