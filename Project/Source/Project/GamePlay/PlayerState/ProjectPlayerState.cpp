@@ -70,3 +70,23 @@ void AProjectPlayerState::OnReactivated()
 {
 	Super::OnReactivated();
 }
+
+void AProjectPlayerState::AddStatTagStack(FGameplayTag Tag, int32 StackCount)
+{
+	StatTags.AddStack(Tag, StackCount);
+}
+
+void AProjectPlayerState::RemoveStatTagStack(FGameplayTag Tag, int32 StackCount)
+{
+	StatTags.RemoveStack(Tag, StackCount);
+}
+
+int32 AProjectPlayerState::GetStatTagStackCount(FGameplayTag Tag) const
+{
+	return StatTags.GetStackCount(Tag);
+}
+
+bool AProjectPlayerState::HasStatTag(FGameplayTag Tag) const
+{
+	return StatTags.ContainsTag(Tag);
+}

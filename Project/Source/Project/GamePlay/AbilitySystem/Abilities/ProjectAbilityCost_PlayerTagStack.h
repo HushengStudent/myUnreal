@@ -7,14 +7,27 @@
 #include "ProjectAbilityCost_PlayerTagStack.generated.h"
 
 /**
- * 
+ * Represents a cost that requires expending a quantity of a tag stack on the player state
  */
-UCLASS()
+UCLASS(meta=(DisplayName="Player Tag Stack"))
 class PROJECT_API UProjectAbilityCost_PlayerTagStack : public UProjectAbilityCost
 {
 	GENERATED_BODY()
 	
-	
-	
-	
+public:
+	UProjectAbilityCost_PlayerTagStack();
+
+	//~ULyraAbilityCost interface
+	virtual bool CheckCost(const UProjectGameplayAbility* Ability, const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, FGameplayTagContainer* OptionalRelevantTags) const override;
+	virtual void ApplyCost(const UProjectGameplayAbility* Ability, const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo) override;
+	//~End of ULyraAbilityCost interface
+
+	protected:
+	/** How much of the tag to spend (keyed on ability level) */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Costs)
+	FScalableFloat Quantity;
+
+	/** Which tag to spend some of */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Costs)
+	FGameplayTag Tag;
 };
