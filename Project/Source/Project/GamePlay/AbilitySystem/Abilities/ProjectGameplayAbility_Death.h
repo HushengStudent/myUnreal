@@ -24,16 +24,16 @@ protected:
 	virtual void EndAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, bool bReplicateEndAbility, bool bWasCancelled) override;
 
 	// Starts the death sequence.
-	UFUNCTION(BlueprintCallable, Category = "Lyra|Ability")
+	UFUNCTION(BlueprintCallable, Category = "Project|GamePlay|AbilitySystem|Abilities|Death")
 	void StartDeath();
 
 	// Finishes the death sequence.
-	UFUNCTION(BlueprintCallable, Category = "Lyra|Ability")
+	UFUNCTION(BlueprintCallable, Category = "Project|GamePlay|AbilitySystem|Abilities|Death")
 	void FinishDeath();
 
 protected:
 
 	// If enabled, the ability will automatically call StartDeath.  FinishDeath is always called when the ability ends if the death was started.
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Lyra|Death")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Project|GamePlay|AbilitySystem|Abilities|Death")
 	bool bAutoStartDeath;
 };

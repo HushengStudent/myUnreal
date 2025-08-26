@@ -38,5 +38,7 @@ class PROJECT_API UProjectAttributeSet : public UAttributeSet
 public:
 	UProjectAttributeSet();
 
+	UWorld* GetWorld() const override;
+	
 	UProjectAbilitySystemComponent* GetProjectAbilitySystemComponent() const;
 };
