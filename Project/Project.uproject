@@ -54,6 +54,10 @@
 		{
 			"Name": "CommonGame",
 			"Enabled": true
+		},
+		{
+			"Name": "SwitchLanguage",
+			"Enabled": true
 		}
 	]
 }
