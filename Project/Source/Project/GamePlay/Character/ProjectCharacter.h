@@ -25,13 +25,13 @@ public:
 	AProjectCharacter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 
-	UFUNCTION(BlueprintCallable, Category = "Lyra|Character")
+	UFUNCTION(BlueprintCallable, Category = "GamePlay|Character")
 	AProjectPlayerController* GetProjectPlayerController() const;
 
-	UFUNCTION(BlueprintCallable, Category = "Lyra|Character")
+	UFUNCTION(BlueprintCallable, Category = "GamePlay|Character")
 	AProjectPlayerState* GetProjectPlayerState() const;
 
-	UFUNCTION(BlueprintCallable, Category = "Lyra|Character")
+	UFUNCTION(BlueprintCallable, Category = "GamePlay|Character")
 	UProjectAbilitySystemComponent* GetProjectAbilitySystemComponent() const;
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 

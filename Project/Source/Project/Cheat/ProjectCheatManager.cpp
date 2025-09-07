@@ -13,5 +13,4 @@ void UProjectCheatManager::ProjectCheatCommand(const int32 Param1, const float P
 	//UE_LOG(LogTemp, Warning, TEXT("Cheat executed with %d and %f"), Param1, Param2);
 	const AProjectGameStateBase* GameStateBase = UProjectGameplayStatics::GetProjectGameState(GetWorld());
 	UE_LOG(LogTemp, Warning, TEXT("Cheat executed with %d and %f"), GameStateBase->PlayerArray.Num(), Param2);
-
 }
