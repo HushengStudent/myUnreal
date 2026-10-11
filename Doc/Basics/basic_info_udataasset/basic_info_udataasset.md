@@ -63,7 +63,13 @@ StreamLoader.RequestAsyncLoad(
 
 ### 对比
 
-![](https://github.com/HushengStudent/myUnreal/blob/main/Doc/Basics/basic_info_udataasset/udataasset.png?raw=true)
+| 特性 | UDataAsset | UPrimaryDataAsset | 数据表(DataTable) |
+| --- | --- | --- | --- |
+| 运行时加载控制 | 手动引用 | 资产管理器自动管理 | 手动加载 |
+| 继承支持 | 仅限蓝图子类 | 仅限蓝图子类 | 不支持 |
+| 分包(Chunk)支持 | ❌ | ✅ | ❌ |
+| 适用场景 | 静态配置 | 需动态管理的大型数据集 | CSV/JSON导入数据 |
+
 
 ### 总结
 
